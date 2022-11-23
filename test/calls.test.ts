@@ -7,9 +7,15 @@ test('Sum of 1 and 2 should return 3', async () => {
     httpServer.close()
 })
 
-test('fetchTodo should return object with id:1', async () => {
+test('5 subtract 3 should return 2', async () => {
     const httpServer = service.listen(3000)
-    const todo = await client.fetchTodo()
+    expect(await client.subtract({ left: 5, right: 3 })).toBe(2)
+    httpServer.close()
+})
+
+test('fetchProduct should return object with id:1', async () => {
+    const httpServer = service.listen(3000)
+    const todo = await client.fetchProduct()
     expect(todo.id).toBe(1)
     httpServer.close()
 })
