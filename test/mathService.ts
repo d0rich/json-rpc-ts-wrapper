@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const mathService = {
     summ(numbers: number[] = []){
         return numbers.reduce((summ, current) => {
@@ -9,5 +11,9 @@ export const mathService = {
         right: number
     }){
         return params.left - params.right
+    },
+    async fetchProduct(){
+        const result = await axios.get('https://dummyjson.com/products/1')
+        return result.data as { id: number }
     }
 }
