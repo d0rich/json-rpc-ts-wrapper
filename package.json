@@ -5,9 +5,14 @@
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "server": "ts-node test/server.ts",
+    "test": "jest"
   },
-  "keywords": ["JSON RPC", "typescript"],
+  "keywords": [
+    "JSON RPC",
+    "typescript"
+  ],
   "author": {
     "name": "Nikolay Dorofeev",
     "email": "d.orich@yandex.com",
@@ -15,6 +20,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.2.3",
+    "axios": "^1.2.0",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
     "typescript": "^4.9.3"
   },
   "dependencies": {
