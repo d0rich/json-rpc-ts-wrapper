@@ -6,8 +6,8 @@
   "types": "lib",
   "scripts": {
     "build": "tsc",
-    "server": "ts-node test/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:server": "ts-node test/server.ts"
   },
   "keywords": [
     "JSON RPC",
