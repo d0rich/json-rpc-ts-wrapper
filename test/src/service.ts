@@ -1,5 +1,5 @@
 import express from "express";
-import {createService} from "../src";
+import {createService} from "../../src";
 import {mathService} from "./mathService";
 import * as bodyParser from "body-parser";
 

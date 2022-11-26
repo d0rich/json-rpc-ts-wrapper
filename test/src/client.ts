@@ -1,4 +1,4 @@
-import {createClient} from "../src";
+import {createClient} from "../../src";
 import {mathService} from "./mathService";
 import {JSONRPCClient} from "json-rpc-2.0";
 import axios from "axios";

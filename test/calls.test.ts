@@ -1,5 +1,4 @@
-import {service} from "./service";
-import {client} from "./client";
+import {service, client} from "./src";
 
 test('Sum of 1 and 2 should return 3', async () => {
     const httpServer = service.listen(3000)
