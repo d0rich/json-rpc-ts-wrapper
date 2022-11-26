@@ -1,6 +1,6 @@
 {
   "name": "json-rpc-ts-wrapper",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create typed JSON RPC service with wrapped json-rpc-2.0 package.",
   "main": "lib/index.js",
   "types": "lib",
@@ -17,6 +17,10 @@
     "name": "Nikolay Dorofeev",
     "email": "d.orich@yandex.com",
     "url": "https://d0rich.github.io/"
+  },
+  "homepage": "https://github.com/d0rich/json-rpc-ts-wrapper",
+  "bugs": {
+    "url": "https://github.com/d0rich/json-rpc-ts-wrapper/issues"
   },
   "license": "MIT",
   "devDependencies": {
