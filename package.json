@@ -1,5 +1,5 @@
 {
-  "name": "typed-json-rpc",
+  "name": "json-rpc-ts-wrapper",
   "version": "1.0.0",
   "description": "Create typed JSON RPC service with wrapped json-rpc-2.0 package.",
   "main": "lib/index.js",
