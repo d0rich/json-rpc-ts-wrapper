@@ -4,8 +4,9 @@ export type CompatibleService = {
     [key: string]: SimpleJSONRPCMethod
 }
 
-export function createService<T extends CompatibleService = {}>(serviceMethods: T, options: JSONRPCServerOptions = {}) {
-    const service = new JSONRPCServer(options)
+export function createService<T extends CompatibleService = {}>(
+    serviceMethods: T,
+    service: JSONRPCServer = new JSONRPCServer()) {
     for (let key in serviceMethods) {
         if (typeof serviceMethods[key] === 'function') {
             service.addMethod(key, serviceMethods[key])
