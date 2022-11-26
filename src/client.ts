@@ -6,6 +6,14 @@ export type GetWrappedClientType<Service extends CompatibleService, ClientParams
                              clientParams?: ClientParams) => PromiseLike<ReturnType<Service[key]>>
 }
 
+/**
+ * Creates object calling service methods via JSON RPC
+ *
+ * @param { Service extends CompatibleService } serviceMethods
+ * @param { JSONRPCClient } jsonRpcClient
+ *
+ * @return Object with methods from provided `serviceMethods` called with provided `jsonRpcClient`
+ */
 export function createClient<Service extends CompatibleService = {}, ClientParams = any>
 (serviceMethods: Service, jsonRpcClient:  JSONRPCClient<ClientParams>): GetWrappedClientType<Service, ClientParams>{
     const client: any = {}

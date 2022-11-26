@@ -4,6 +4,14 @@ export type CompatibleService = {
     [key: string]: SimpleJSONRPCMethod
 }
 
+/**
+ * Register all your service methods in JSON RPC server
+ *
+ * @param { Service extends CompatibleService }  serviceMethods
+ * @param {JSONRPCServer} service
+ *
+ * @return `JSONRPCServer` object with registered methods from provided `serviceMethods`
+ */
 export function createService<T extends CompatibleService = {}>(
     serviceMethods: T,
     service: JSONRPCServer = new JSONRPCServer()) {
